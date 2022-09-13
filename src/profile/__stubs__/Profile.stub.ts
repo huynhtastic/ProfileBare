@@ -1,6 +1,6 @@
 import { Profile } from '../api';
 
-export const ProfileStub: Profile = {
+export const MockProfileStub: Profile = {
   id: 1,
   firstName: 'firstName',
   lastName: 'lastName',

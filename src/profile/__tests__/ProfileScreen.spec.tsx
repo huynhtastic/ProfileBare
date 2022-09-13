@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react-native';
 import React from 'react';
 import { ProfileScreen } from '../ProfileScreen';
-import { ProfileStub } from './Profile.stub';
+import { MockProfileStub } from '../__stubs__/Profile.stub';
 
 const renderScreen = () => {
   // FIXME: Passed an empty fn to satisfy TS error
