@@ -1,9 +1,10 @@
-import React from 'react';
-import { ProfileScreen } from './ProfileScreen';
 import { fireEvent, render } from '@testing-library/react-native';
+import React from 'react';
+import { ProfileScreen } from '../ProfileScreen';
+import { ProfileStub } from './Profile.stub';
 
 const renderScreen = () => {
-  // FIXME: Pass an empty fn to satisfy TS error
+  // FIXME: Passed an empty fn to satisfy TS error
   return render(<ProfileScreen setScreen={() => {}} />);
 };
 

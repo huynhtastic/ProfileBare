@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-interface Profile {
+export interface Profile {
   id: number;
   firstName: string;
   lastName: string;
@@ -19,6 +19,6 @@ const get = () => {
     .then(res => res.data);
 };
 
-export const Profile = {
+export const ProfileAPI = {
   get,
 };
