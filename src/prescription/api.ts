@@ -1,16 +1,17 @@
 import axios from 'axios';
 
-interface Prescription {
+export interface Prescription {
   id: number;
   name: string;
   /**
    * Comes in the format of '5 mg', '10 mg', '1 g', '10 ml', etc.
    */
   dosage: string;
-  refillsRemaining: number;
-  quantity: number;
-  instructions: number;
+  instructions: string;
+  isActive: boolean;
   prescriberId: number;
+  quantity: number;
+  refillsRemaining: number;
 }
 
 const get = () => {
@@ -21,6 +22,6 @@ const get = () => {
     .then(res => res.data);
 };
 
-export const Prescription = {
+export const PrescriptionAPI = {
   get,
 };
