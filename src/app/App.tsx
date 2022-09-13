@@ -8,6 +8,7 @@ import {
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { ProfileScreen } from '../profile/ProfileScreen';
+import { PrescriptionScreen } from '../prescription/PrescriptionScreen';
 
 const App = () => {
   const [screen, setScreen] = useState<'profile' | 'prescription'>('profile');
