@@ -15,14 +15,14 @@ The app has 1 container that switches between 2 screens using a `setScreen` func
 	App --> PrescriptionScreen
 ```
 
-## Profile Feature
+## Prescription Feature
 
-The profile feature consists of a `ProfileScreen` that:
+The Prescription feature consists of a new `PrescriptionScreen` that:
 
-- Shows a user's first name and last name
-- Shows a user's date of birth
-- Shows a button that allows a user to go to the Prescription Screen
+- Shows how many active prescriptions a user has
+- Lists out the names of the prescriptions
+- Shows button that allows a user to return back to their profile
 
-In `src/profile`, there is 1 passing test and 4 other failing tests.
+In `src/prescription`, there is 1 passing test and 3 other failing tests.
 
 Our job will be to complete the tests and build the code to ensure they’re passing.
