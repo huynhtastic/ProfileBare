@@ -14,21 +14,25 @@ describe('ProfileScreen', () => {
   });
 
   describe('UI', () => {
+    // FIXME: This is not passing
     it('should render firstName lastName concatenated', () => {
       const { getByText } = renderScreen();
-      // FIXME: Should check for 'firstName lastName'
-      expect(getByText('')).not.toBeNull();
+      expect(
+        getByText(`${MockProfileStub.firstName} ${MockProfileStub.lastName}`),
+      ).not.toBeNull();
     });
 
+    // FIXME: This is not passing
     it('should render dateOfBirth "month day, year" concatenated', () => {
       const { getByText } = renderScreen();
-      // FIXME: Should check for 'month day, year'
-      expect(getByText('')).not.toBeNull();
+      const { day, month, year } = MockProfileStub.dateOfBirth;
+      expect(getByText(`${month} ${day}, ${year}`)).not.toBeNull();
     });
   });
 
   describe('props', () => {
     describe('setScreen', () => {
+      // FIXME: This is not passing
       it('should fire when the "My Prescriptions" button is pressed', () => {
         const { getByText } = renderScreen();
         fireEvent.press(getByText('My Prescriptions'));
@@ -37,6 +41,7 @@ describe('ProfileScreen', () => {
         // expect()
       });
 
+      // FIXME: This is not passing
       it('should fire with arg "prescription" when the "My Prescriptions" button is pressed', () => {
         const { getByText } = renderScreen();
         fireEvent.press(getByText('My Prescriptions'));
