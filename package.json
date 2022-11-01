@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:watch:profile": "jest --watch src/profile/__tests__/ProfileScreen.spec.tsx",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
